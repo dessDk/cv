@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Karpenko CV{% endblock %}
+
+{% block body %}
+  <table>
+    <tr>
+      <td>
+       <img src="/images/avatar.jpg" width="500" alt="тут шрек"/>
+      </td>
+     <td>
+      <h1>Дмитрий Карпенко</h1>
+      <p><em>я играю в <strong>Доту</strong></em></p>
+      <p>я играю в доту и играю не только в доту, но и в доту 2</p>
+     </td>
+    </tr>
+  </table>
+
+ <hr>
+
+<h2>Мои социальные сети</h2>
+ <ul>
+  <li>discord: тайлер дерден#8716 </li>
+  <li><a href="https://vk.com/dess.espada" target="_blank">vkontakte</a></li>
+ </ul>
+
+ <hr>
+
+<h2>Мои хобби</h2>
+ <ol type="I">
+  <li>Дотер, играю в доту</li>
+  <li>Хожу в школу</li>
+ </ol>
+
+ <hr>
+
+ <h2>Опыт в дотке</h2>
+ <table>
+  <tr>
+   <th>Игра</th>
+   <th>Позиция</th>
+   <th>Год</th>
+  </tr>
+  <tr>
+   <td>Dota2</td>
+   <td>player 1,2 pos</td>
+   <td>2020 - now </td>
+  </tr>
+
+ </table>
+
+ <hr>
+
+ <h2>Steam profile</h2>
+  <a href="/steam">Посмотреть профиль</a>
+
+ <hr>
+
+ <h2>Связаться со мной</h2>
+
+ <form action="/">
+  <label for="name">Ваше имя:</label>
+   <input type="text" id="name"
+          placeholder="Введите ваше имя...">
+<br>
+  <label for="email">Ваше email:</label>
+   <input type="email" id="email"
+          placeholder="Введите email...">
+
+  <br>
+
+  <input type="submit" value="Отправить">
+
+  <br>
+
+  <label for="text">Ваше сообщение:</label>
+  <br>
+  <textarea id="text" rows="2" cols="15"></textarea>
+
+ </form>
+
+ <hr>
+
+{% endblock %}
